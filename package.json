@@ -1,0 +1,21 @@
+{
+  "name": "broomstick",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@wikimedia/codex": "^2.3.2",
+    "@wikimedia/codex-design-tokens": "^2.3.2",
+    "@wikimedia/codex-icons": "^2.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.1.7",
+    "vue": "^3.5.21"
+  }
+}
