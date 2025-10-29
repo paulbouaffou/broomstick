@@ -12,8 +12,10 @@ export const LANGUAGES = [
   { display: 'Banjar (bjn)', code: 'bjn', autonym: 'Banjar', qid: 'Q33151' },
   { display: 'Basa Bali (ban)', code: 'ban', autonym: 'Basa Bali', qid: 'Q33070' },
   { display: 'Bikol Central (bcl)', code: 'bcl', autonym: 'Bikol Central', qid: 'Q33284' },
+  { display: 'Bokmål (nb)', code: 'nb', autonym: 'Bokmål', qid: 'Q25167' },
   { display: 'Brezhoneg (br)', code: 'br', autonym: 'Brezhoneg', qid: 'Q12107' },
   { display: 'Dagbanli (dag)', code: 'dag', autonym: 'Dagbanli', qid: 'Q32238' },
+  { display: 'Dansk (da)', code: 'da', autonym: 'Dansk', qid: 'Q9035' },
   { display: 'Deutsch (de)', code: 'de', autonym: 'Deutsch', qid: 'Q188' },
   { display: 'English (en)', code: 'en', autonym: 'English', qid: 'Q1860' },
   { display: 'Español (es)', code: 'es', autonym: 'Español', qid: 'Q1321' },
@@ -27,17 +29,23 @@ export const LANGUAGES = [
   { display: 'Kiswahili (sw)', code: 'sw', autonym: 'Kiswahili', qid: 'Q7838' },
   { display: 'Latviešu (lv)', code: 'lv', autonym: 'Latviešu', qid: 'Q9078' },
   { display: 'Madhurâ (mad)', code: 'mad', autonym: 'Madhurâ', qid: 'Q36213' },
+  { display: 'Magyar (hu)', code: 'hu', autonym: 'Magyar', qid: 'Q9067' },
   { display: 'Minangkabau (min)', code: 'min', autonym: 'Minangkabau', qid: 'Q13324' },
   { display: 'Nederlands (nl)', code: 'nl', autonym: 'Nederlands', qid: 'Q7411' },
+  { display: 'Polski (pl)', code: 'pl', autonym: 'Polski', qid: 'Q809' },
   { display: 'Português (pt)', code: 'pt', autonym: 'Português', qid: 'Q5146' },
+  { display: 'Slovenčina (sk)', code: 'sk', autonym: 'Slovenčina', qid: 'Q9058' },
   { display: 'Soomaaliga (so)', code: 'so', autonym: 'Soomaaliga', qid: 'Q13275' },
   { display: 'Sunda (su)', code: 'su', autonym: 'Sunda', qid: 'Q34002' },
+  { display: 'Suomi (fi)', code: 'fi', autonym: 'Suomi', qid: 'Q1412' },
   { display: 'Svenska (sv)', code: 'sv', autonym: 'Svenska', qid: 'Q9027' },
   { display: 'Tagalog (tl)', code: 'tl', autonym: 'Tagalog', qid: 'Q34057' },
   { display: 'Tiếng Việt (vi)', code: 'vi', autonym: 'Tiếng Việt', qid: 'Q9199' },
   { display: 'Türkçe (tr)', code: 'tr', autonym: 'Türkçe', qid: 'Q256' },
   { display: 'Yorùbá (yo)', code: 'yo', autonym: 'Yorùbá', qid: 'Q34311' },
-  { display: 'русский (ru)', code: 'ru', autonym: 'русский', qid: 'Q5218' },
+  { display: 'Čeština (cs)', code: 'cs', autonym: 'Čeština', qid: 'Q9056' },
+  { display: 'Ελληνικά (el)', code: 'el', autonym: 'Ελληνικά', qid: 'Q36510' },
+  { display: 'русский (ru)', code: 'ru', autonym: 'русский', qid: 'Q7737' },
   { display: 'Українська (uk)', code: 'uk', autonym: 'Українська', qid: 'Q8798' },
   { display: '\u202Bייִדיש\u202C (yi)', code: 'yi', autonym: 'ייִדיש', qid: 'Q8641' },
   { display: '\u202Bעברית\u202C (he)', code: 'he', autonym: 'עברית', qid: 'Q9288' },
@@ -48,11 +56,14 @@ export const LANGUAGES = [
   { display: 'हिन्दुस्तानी (hi)', code: 'hi', autonym: 'हिन्दुस्तानी', qid: 'Q11051' },
   { display: 'অসমীয়া (as)', code: 'as', autonym: 'অসমীয়া', qid: 'Q29401' },
   { display: 'বাংলা (bn)', code: 'bn', autonym: 'বাংলা', qid: 'Q9610' },
+  { display: 'ਪੰਜਾਬੀ (pa)', code: 'pa', autonym: 'ਪੰਜਾਬੀ', qid: 'Q58635' },
   { display: 'ગુજરાતી (gu)', code: 'gu', autonym: 'ગુજરાતી', qid: 'Q5137' },
   { display: 'ଓଡ଼ିଆ (or)', code: 'or', autonym: 'ଓଡ଼ିଆ', qid: 'Q33810' },
+  { display: 'தமிழ் (ta)', code: 'ta', autonym: 'தமிழ்', qid: 'Q5885' },
   { display: 'മലയാളം (ml)', code: 'ml', autonym: 'മലയാളം', qid: 'Q36236' },
   { display: 'ไทย (th)', code: 'th', autonym: 'ไทย', qid: 'Q9217' },
-  { display: '日本語 (ja)', code: 'ja', autonym: '日本語', qid: 'Q5287' }
+  { display: '日本語 (ja)', code: 'ja', autonym: '日本語', qid: 'Q5287' },
+  { display: '한국어 (ko)', code: 'ko', autonym: '한국어', qid: 'Q9176' }
 ]
 
 // helper functions
@@ -66,4 +77,5 @@ export function getLanguageByDisplay(displayString) {
 
 export function getLanguageCode(displayString) {
   return LANGUAGES.find(lang => lang.display === displayString)?.code
+
 }
