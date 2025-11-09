@@ -11,6 +11,7 @@ export const LANGUAGES = [
   { display: 'Bahasa Indonesia (id)', code: 'id', autonym: 'Bahasa Indonesia', qid: 'Q9240' },
   { display: 'Bahasa Melayu (ms)', code: 'ms', autonym: 'Bahasa Melayu', qid: 'Q9237' },
   { display: 'Banjar (bjn)', code: 'bjn', autonym: 'Banjar', qid: 'Q33151' },
+  { display: 'Baoulé (bci)', code: 'bci', autonym: 'Baoulé', qid: 'Q35107' },
   { display: 'Basa Bali (ban)', code: 'ban', autonym: 'Basa Bali', qid: 'Q33070' },
   { display: 'Bikol Central (bcl)', code: 'bcl', autonym: 'Bikol Central', qid: 'Q33284' },
   { display: 'Bokmål (nb)', code: 'nb', autonym: 'Bokmål', qid: 'Q25167' },
@@ -100,5 +101,6 @@ export function getLanguageCode(displayString) {
   return LANGUAGES.find(lang => lang.display === displayString)?.code
 
 }
+
 
 
