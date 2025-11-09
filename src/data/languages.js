@@ -26,6 +26,7 @@ export const LANGUAGES = [
   { display: 'Esperanto (eo)', code: 'eo', autonym: 'Esperanto', qid: 'Q143' },
   { display: 'Euskara (eu)', code: 'eu', autonym: 'Euskara', qid: 'Q8752' },
   { display: 'Eʋe (ee)', code: 'ee', autonym: 'Eʋe', qid: 'Q30005' },
+  { display: 'Fon-gbe (fon)', code: 'fon', autonym: 'Fon-gbe', qid: 'Q33291' },
   { display: 'Français (fr)', code: 'fr', autonym: 'Français', qid: 'Q150' },
   { display: 'Fulfulde (ff)', code: 'ff', autonym: 'Fulfulde', qid: 'Q33454' },
   { display: 'Hausa (ha)', code: 'ha', autonym: 'Hausa', qid: 'Q56475' },
@@ -99,4 +100,5 @@ export function getLanguageCode(displayString) {
   return LANGUAGES.find(lang => lang.display === displayString)?.code
 
 }
+
 
